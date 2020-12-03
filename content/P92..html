@@ -133,8 +133,31 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Develop << <a href='Develop.html'>Previous</a> <a href='class notebook.html'>Next</a> >> class notebook<br /><h1>Test</h1>
-<br />Develop << <a href='Develop.html'>Previous</a> <a href='class notebook.html'>Next</a> >> class notebook</div>
+    <div id="tipue_search_content">P93. << <a href='P93..html'>Previous</a> <a href='P91..html'>Next</a> >> P91.<br /><h1>P92.</h1>
+<p><strong>Carrier Sense Multiple Access/Collision Detect(載波偵聽多路訪問/衝突檢測)</strong></p>
+<p id="N10698" lang="">The nature of half-duplex transmission brought about the need for CSMA/CD, which works by allowing all devices to transmit data whenever they wish. The carrier sense portion means that the device “listens” to the network first to find a “break” in the conversation. If the device doesn’t hear other devices transmitting, then it begins its transmission. Multiple access refers to every device having equal access to the network at all times. This is unlike the token ring network in which each device had to wait for the signal (token) before transmitting. Finally, we have collision detection as part of the CSMA/CD control method. If, by chance, two devices both were ready to transmit, they “listened” to the network for a “lull” in the conversation, and both started transmitting at the same time, the devices are able to detect that they both transmitted at the same time and caused a collision.</p>
+<p id="N1069B" lang="">The image below depicts both the CSMA/CD and CSMA/CA simplified algorithm. The left branch is CSMA/CD used by half-duplex Ethernet and the right branch is CSMA/CA used by 802.11 wireless LAN, which is also half-duplex.</p>
+<p lang=""><span>半雙工傳輸的性質帶來了對CSMA/CD的需求，它允許所有設備在任何時候傳輸數據。載波檢測部分意味著設備首先“監聽”網絡以在會話中找到“中斷”。如果設備聽不到其他設備的傳輸，則開始傳輸。多址接入指的是每個設備在任何時候都能平等地訪問網絡。這與權杖環網不同，在權杖環網中，每個設備在傳輸之前都必須等待訊號（權杖）。最後，我們將碰撞檢測作為CSMA/CD控制方法的一部分。如果碰巧兩個設備都準備好傳輸，它們會在對話中“監聽”網絡以“暫停”，並且同時開始傳輸，那麼這些設備能够檢測到它們同時傳輸並導致衝突。</span><br/><span>下圖描述了CSMA/CD和CSMA/CA簡化算灋。左分支是半雙工以太網使用的CSMA/CD，右分支是802.11無線局域網使用的CSMA/CA，也是半雙工的。</span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image1.png"/></span>
+<p id="N106A3" lang="">CSMA/CD and CSMA/CA diagram. By<span> </span><a href="https://commons.wikimedia.org/wiki/File:Csmaca_algorithm.png" id="_i_1" lang="" target="_blank">Tkz4</a><span> </span>(Own work) [<a href="http://creativecommons.org/licenses/by-sa/3.0" id="_i_2" lang="" target="_blank">CC BY-SA 3.0</a><span> </span>or<span> </span><a href="http://www.gnu.org/copyleft/fdl.html" id="_i_3" lang="" target="_blank">GFDL</a>], via Wikimedia Commons</p>
+</div>
+<p id="N106B9" lang="">In the example shown below, four devices are connected in a physical bus topology. Each device has equal access to the network. Here, all the devices are listening, trying to determine if any other device is communicating before beginning transmission.</p>
+<p lang=""><span>CSMA / CD和CSMA / CA圖。通過Wikimedia Commons通過Tkz4（自己的作品）[CC BY-SA 3.0或GFDL]</span><br/><br/><span>在下面顯示的示例中，四個設備以物理總線拓撲連接。每個設備對網絡都有平等的訪問權限。在這裡，所有設備都在監聽，試圖確定是否有其他設備在開始傳輸之前進行通信。</span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image2.png"/></span>
+<p id="N106C1" lang="">Ethernet devices on a shared bus topology. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_5" lang="" target="_blank">Nattydusadee</a>.</p>
+</div>
+<p id="N106CA" lang="">In the next image below, we see an example of two devices that transmitted at the same time. This simultaneous transmission resulted in a data collision, causing the transmission to be broken.</p>
+<p lang=""><span>共享總線拓撲上的以太網設備。圖像由Nattydusadee根據CC-BY-SA許可使用。</span><br/><br/><span>在下一張圖片中，我們看到了兩個同時傳輸的設備的示例。這種同時傳輸導致數據衝突，導致傳輸中斷。</span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image3.png"/></span>
+<p id="N106D2" lang="">Collision on an Ethernet segment. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_7" lang="" target="_blank">Nattydusadee</a>.</p>
+</div>
+<p id="N106DB" lang="">When a collision is detected, both devices choose a backoff time at random, and then attempt to retransmit again. In the diagram below, the computers choose to wait 200 milliseconds and 300 milliseconds, respectively. When that time is up, they will attempt to sense if another machine is already transmitting. If there is nothing detected, the first machine will transmit its message. Once completed, the second machine will then transmit its message, after its 300 millisecond wait time.</p>
+<p lang=""><span>以太網段上的衝突。圖像由Nattydusadee根據CC-BY-SA許可使用。</span><br/><br/><span>當檢測到衝突時，兩個設備都會隨機選擇一個退避時間，然後嘗試重新傳輸。在下圖中，計算機分別選擇等待200毫秒和300毫秒。時間到時，他們將嘗試檢測另一台機器是否已經在傳輸。如果未檢測到任何內容，則第一台機器將發送其消息。一旦完成，第二台機器將在其300毫秒的等待時間之後發送其消息。</span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_8" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image4.png"/></span>
+<p id="N106E3" lang="">Recovering from a collision with random backup timers. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_9" lang="" target="_blank">Nattydusadee</a>.</p>
+<p lang=""><span>使用隨機備份計時器從衝突中恢復。圖像由Nattydusadee根據CC-BY-SA許可使用。</span></p>
+</div>
+<br />P93. << <a href='P93..html'>Previous</a> <a href='P91..html'>Next</a> >> P91.</div>
         
     <!-- footer -->
       <div class="container">
