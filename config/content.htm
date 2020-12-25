@@ -14,7 +14,9 @@
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
 <h1>Test</h1>
-<h2>class notebook</h2>
+<h2>encounter problems</h2>
+<h3>no server name </h3>
+<p>在fork組長的資料夾後，將資料複製到自己的資料夾，進行靜態編輯server卻出現[::]，而這是使用ipv6所出現的，如要更改，需要進入該倉儲的init.py在裡面進行編輯，在IP = "_"其中如果是"::"表示自動抓取ipv6的網址，所以要將ipv6位置複製進去才能進去編輯，或是要限定此主機進行編輯，則要在其中數入127.0.0.1</p><h2>class notebook</h2>
 <p>註記身分</p>
 <p>git config --global http.proxy <a href="http://[2001:288:6004:17::69]:3128">http://[2001:288:6004:17::69]:3128</a></p>
 <p>git config --global user.name "40923133"</p>
@@ -96,7 +98,8 @@
 <p>Verify Connectivity<br/>After the machine is connected and powered on (assuming Windows 7 or later), watch the system tray after boot-up to see if there is a wired network icon. The standard Windows 7 icons are:</p>
 <p>Three icons are displayed. The first icon-- labeled: connected -- is a computer screen with a plug and cable to the left. The second icon, labeled disconnected, is the same as the first icon but has a yellow triangle with an exclamation point inside it. The third icon, labeled disabled, is the same as the first icon with a red X.<br/>Wired network icons. Images used under CC-BY license from Russell Burchill.</p>
 <p>Access the “network sharing center” to select the type of network access you need to have and add any devices required for the node (e.g., a printer). Verify access by opening the browser or using a command line tool to verify connectivity and addressing.</p>
-<p><span>既然您已經對網絡硬件，LAN（局域網）和WAN（廣域網）的標準的應用以及所用媒體的限制有了一般的了解，那麼您應該能夠計劃將網絡節點添加到已經現有網絡。例如，您可以將新計算機添加到公司的有線局域網中。在這種情況下，大多數硬件安裝都是即插即用（PnP），但您仍然必須知道所選的硬件和媒體是正確的，配置用於網絡訪問的軟件設置，並驗證新硬件是否正常運行以允許用戶訪問所有網絡資源。</span><br/><br/><span>大多數小型辦公室/家庭辦公室（SOHO）環境中的當前技術都將具有自動感應網絡硬件。有些舊的交換機和路由器仍然保留在某些不能在100 / 1000BaseT上運行的網絡中，因此請查看您的網絡文檔！</span><br/><br/><span>媒體</span><br/><span>在網絡上安裝有線連接意味著要知道設備的NIC（網絡接口卡）是否還可以根據所使用的電纜介質自動協商吞吐量。同樣，新技術或當前技術應該是自動感應和自動協商（速度，雙工模式和其他網絡參數）。對於技術人員而言，最重要的決定是選擇正確的以太網電纜類型來連接設備。回想一下，電纜標準將限制距離以及吞吐量。Cat 5電纜是100BaseT的標準配置，但會將吞吐量限制為100 Mbps，因此，如果要實現1000BaseT（1 Gbps），則必須使用Cat 5e或Cat 6。</span><br/><br/><span>距離</span><br/><span>當前大多數SOHO環境將在內部將以太網牆壁插孔連接到下一個網絡設備，無論是交換機還是集線器。但是，如果尚不存在連接，則必須記住所有基於銅纜的以太網電纜限制為100米。請勿在可能會導致安全隱患，因環境條件而損壞電纜或遭受電磁干擾（EMI）的區域中佈線。</span><br/><br/><span>驗證連接性連接</span><br/><span>機器並打開電源（假設使用Windows 7或更高版本）後，在啟動後觀察系統托盤以查看是否存在有線網絡圖標。Windows 7的標準圖標是：</span><br/><br/><span>顯示三個圖標。第一個圖標（標記為：已連接）是計算機屏幕，左側帶有插頭和電纜。標記為斷開連接的第二個圖標與第一個圖標相同，但帶有一個黃色三角形，其中帶有感嘆號。第三個圖標（標記為禁用）與帶有紅色X的第一個圖標相同。</span><br/><span>有線網絡圖標。圖片由Russell Burchill根據CC-BY許可使用。</span><br/><br/><span>訪問“網絡共享中心”以選擇所需的網絡訪問類型，並添加該節點所需的任何設備（例如打印機）。通過打開瀏覽器或使用命令行工具來驗證訪問權限，以驗證連接性和地址。</span></p><h3>P93.</h3>
+<p><span>既然您已經對網絡硬件，LAN（局域網）和WAN（廣域網）的標準的應用以及所用媒體的限制有了一般的了解，那麼您應該能夠計劃將網絡節點添加到已經現有網絡。例如，您可以將新計算機添加到公司的有線局域網中。在這種情況下，大多數硬件安裝都是即插即用（PnP），但您仍然必須知道所選的硬件和媒體是正確的，配置用於網絡訪問的軟件設置，並驗證新硬件是否正常運行以允許用戶訪問所有網絡資源。</span><br/><br/><span>大多數小型辦公室/家庭辦公室（SOHO）環境中的當前技術都將具有自動感應網絡硬件。有些舊的交換機和路由器仍然保留在某些不能在100 / 1000BaseT上運行的網絡中，因此請查看您的網絡文檔！</span><br/><br/><span>媒體</span><br/><span>在網絡上安裝有線連接意味著要知道設備的NIC（網絡接口卡）是否還可以根據所使用的電纜介質自動協商吞吐量。同樣，新技術或當前技術應該是自動感應和自動協商（速度，雙工模式和其他網絡參數）。對於技術人員而言，最重要的決定是選擇正確的以太網電纜類型來連接設備。回想一下，電纜標準將限制距離以及吞吐量。Cat 5電纜是100BaseT的標準配置，但會將吞吐量限制為100 Mbps，因此，如果要實現1000BaseT（1 Gbps），則必須使用Cat 5e或Cat 6。</span><br/><br/><span>距離</span><br/><span>當前大多數SOHO環境將在內部將以太網牆壁插孔連接到下一個網絡設備，無論是交換機還是集線器。但是，如果尚不存在連接，則必須記住所有基於銅纜的以太網電纜限制為100米。請勿在可能會導致安全隱患，因環境條件而損壞電纜或遭受電磁干擾（EMI）的區域中佈線。</span><br/><br/><span>驗證連接性連接</span><br/><span>機器並打開電源（假設使用Windows 7或更高版本）後，在啟動後觀察系統托盤以查看是否存在有線網絡圖標。Windows 7的標準圖標是：</span><br/><br/><span>顯示三個圖標。第一個圖標（標記為：已連接）是計算機屏幕，左側帶有插頭和電纜。標記為斷開連接的第二個圖標與第一個圖標相同，但帶有一個黃色三角形，其中帶有感嘆號。第三個圖標（標記為禁用）與帶有紅色X的第一個圖標相同。</span><br/><span>有線網絡圖標。圖片由Russell Burchill根據CC-BY許可使用。</span><br/><br/><span>訪問“網絡共享中心”以選擇所需的網絡訪問類型，並添加該節點所需的任何設備（例如打印機）。通過打開瀏覽器或使用命令行工具來驗證訪問權限，以驗證連接性和地址。</span></p>
+<h3>P93.</h3>
 <p><strong>Evolution of Standards(<span>標準的演變)</span></strong></p>
 <p>Finally, we need to discuss the various standards we use in Ethernet in terms of bandwidth and distance limitations.</p>
 <p>The Ethernet standard also determines the type of cable, its bandwidth, and its distance limitation. It is important to know these standards, especially those that relate to a category 3, 5, 5e, and 6 cabling standard.</p>
@@ -142,3 +145,14 @@
 <p><span>In this module, we are going to discuss how the various Ethernet standards developed over time. We will also discuss why there is a need for these standards and the effect of these standards on the industry. In addition, we are going to cover various types of network media standards. We will cover 10Base-T (802.3i, 1990) as well as 100Base-T and 1000Base-T (1GBASE-T or 1 GigE) Ethernet standards, which are most commonly found in current office networks. We will discover how to plan a basic network connection using 100BaseT. Finally, we will cover differences between Ethernet and TCP/IP.</span></p>
 <p><span>在本模塊中，我們將討論隨著時間的推移如何開發各種以太網標準。我們還將討論為什麼需要這些標準以及這些標準對行業的影響。另外，我們將涵蓋各種類型的網絡媒體標準。我們將介紹10Base-T（802.3i，1990）以及100Base-T和1000Base-T（1GBASE-T或1 GigE）以太網標準，它們是當前辦公網絡中最常見的標準。我們將發現如何使用100BaseT規劃基本的網絡連接。最後，我們將介紹以太網和TCP / IP之間的差異。</span></p>
 <p></p>
+<div id="gtx-anchor" style="position: absolute; visibility: hidden; left: 81px; top: 14.7344px; width: 351px; height: 27px;"></div>
+<div aria-describedby="bubble-2" class="jfk-bubble gtx-bubble" role="alertdialog" style="visibility: visible; left: -26px; top: 52px; opacity: 1;">
+<div class="jfk-bubble-content-id" id="bubble-2">
+<div id="gtx-host" style="min-width: 200px; max-width: 400px;"></div>
+</div>
+<div aria-label="Close" class="jfk-bubble-closebtn-id jfk-bubble-closebtn" role="button" tabindex="0"></div>
+<div class="jfk-bubble-arrow-id jfk-bubble-arrow jfk-bubble-arrowup" style="left: 248.5px;">
+<div class="jfk-bubble-arrowimplbefore"></div>
+<div class="jfk-bubble-arrowimplafter"></div>
+</div>
+</div>
